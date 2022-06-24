@@ -1,4 +1,4 @@
-import SimpleDateTime  from 'react-simple-timestamp-to-date';
+
 import React from "react";
 import { useState } from "react";
 import "./App.css";  
@@ -10,15 +10,14 @@ import Modal from "./Modal";
 
 
 
+
 const App = () => {
-const [data,setData]=useState(null)  
- 
-// const handleClick = () =>{
-//     console.log('add click logic');
-//   }
+  
+const [data,setData]=useState(null)
+
   return (
     <>
-    <h1> Blog App using React Js</h1>   
+    <h1 > Blog App using React Js</h1>   
       <div className="blog__app">
       
       {
@@ -36,15 +35,15 @@ const [data,setData]=useState(null)
            <div className="info-container" > 
             <div>
              {value.author.name}-{value.author.role}
-             
-
              </div>
-
+           
+             
              
              <div>
              
-             <SimpleDateTime>{value.date}  </SimpleDateTime>            
+                    
           </div>
+          {new Date(1606311631).toLocaleString(undefined, {dateStyle: 'short'})}
             </div>
              <button onClick={()=> setData(value)}>
                view
