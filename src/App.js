@@ -17,7 +17,7 @@ const [data,setData]=useState(null)
 
   return (
     <>
-    <h1 > Blog App using React Js</h1>   
+    <h1 ><center>  Blog App using React Js</center></h1>   
       <div className="blog__app">
       
       {
